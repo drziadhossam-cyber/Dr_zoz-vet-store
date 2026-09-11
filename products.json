@@ -1,0 +1,1990 @@
+{
+  "settings": {
+    "siteName": "Dr_Zoz Vet Store",
+    "whatsappNumber": "201025739833",
+    "contactEmail": "info@example.com",
+    "facebookUrl": "",
+    "instagramUrl": "",
+    "address": "غير متوفر حاليًا",
+    "workingHours": "غير متوفر حاليًا",
+    "note": "رقم واتساب الموقع: 01025739833 (مصر) — تم تخزينه هنا بصيغة دولية 201025739833 كما يتطلبها رابط WhatsApp Click-to-Chat (wa.me). الموقع لا يعرض أي أسعار في أي مكان."
+  },
+  "categories": {
+    "medicines": {
+      "id": "medicines",
+      "title": "الأدوية والعلاجات البيطرية",
+      "slug": "veterinary-medicines",
+      "subcategories": [
+        "أدوية أخرى",
+        "أدوية طفيليات وديدان",
+        "فيتامينات ومكملات",
+        "مضادات حيوية",
+        "مطهرات"
+      ]
+    },
+    "tools": {
+      "id": "tools",
+      "title": "الأدوات والمستلزمات البيطرية",
+      "slug": "veterinary-tools",
+      "subcategories": [
+        "سرنجات وإبر",
+        "شاش وقطن",
+        "قفازات",
+        "مستلزمات أبقار وأغنام وماعز",
+        "مستلزمات العيادات البيطرية",
+        "مستلزمات حيوانات أليفة",
+        "مستلزمات خيول",
+        "مستلزمات دواجن",
+        "مستلزمات طبية عامة",
+        "مستلزمات مزارع"
+      ]
+    }
+  },
+  "animals": [
+    "دواجن",
+    "أبقار",
+    "جاموس",
+    "أغنام",
+    "ماعز",
+    "خيول",
+    "كلاب",
+    "قطط",
+    "أرانب",
+    "حيوانات أخرى"
+  ],
+  "products": [
+    {
+      "id": "med-001",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Baytril 10% (إنروفلوكساسين)",
+      "company": "Bayer Animal Health / Elanco",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مضاد حيوي واسع الطيف من مجموعة الفلوروكينولونات، من أشهر المضادات الحيوية المستخدمة بيطريًا.",
+      "usage": "يُستخدم بيطريًا لعلاج الالتهابات البكتيرية في عدة أنواع من الحيوانات تحت إشراف طبيب بيطري.",
+      "featured": true,
+      "image": "med-001.svg"
+    },
+    {
+      "id": "med-002",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Norocillin LA (أموكسيسيلين طويل المفعول)",
+      "company": "Norbrook",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "خيول"
+      ],
+      "description": "مضاد حيوي حقن من مجموعة البنسلينات طويل المفعول شائع الاستخدام في الماشية.",
+      "usage": "لعلاج الالتهابات البكتيرية الحساسة للأموكسيسيلين في الماشية.",
+      "featured": false,
+      "image": "med-002.svg"
+    },
+    {
+      "id": "med-003",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Tylan 200 (تايلوزين)",
+      "company": "Elanco",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "خيول",
+        "دواجن"
+      ],
+      "description": "مضاد حيوي من مجموعة الماكروليدات معروف عالميًا في الطب البيطري.",
+      "usage": "يُستخدم لعلاج بعض الالتهابات البكتيرية والتنفسية في الماشية والدواجن.",
+      "featured": true,
+      "image": "med-003.svg"
+    },
+    {
+      "id": "med-004",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Terramycin / LA-200 (أوكسي تتراسيكلين)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "مضاد حيوي من مجموعة التتراسيكلين طويل المفعول من أقدم وأشهر العلامات البيطرية.",
+      "usage": "لعلاج مجموعة من الالتهابات البكتيرية في الماشية.",
+      "featured": false,
+      "image": "med-004.svg"
+    },
+    {
+      "id": "med-005",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Draxxin (تولاثروميسين)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "مضاد حيوي حديث طويل المفعول من مجموعة الماكروليدات يُستخدم غالبًا لأمراض الجهاز التنفسي.",
+      "usage": "يُستخدم بيطريًا لعلاج التهابات الجهاز التنفسي البكتيرية في الماشية.",
+      "featured": false,
+      "image": "med-005.svg"
+    },
+    {
+      "id": "med-006",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Nuflor (فلورفينيكول)",
+      "company": "MSD Animal Health",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "مضاد حيوي واسع الطيف يُستخدم بشكل شائع في علاج أمراض الجهاز التنفسي بالماشية.",
+      "usage": "لعلاج الالتهابات البكتيرية التنفسية في الماشية.",
+      "featured": false,
+      "image": "med-006.svg"
+    },
+    {
+      "id": "med-007",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Betamox LA (أموكسيسيلين)",
+      "company": "Norbrook",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مضاد حيوي حقن طويل المفعول من مجموعة البنسلينات.",
+      "usage": "لعلاج الالتهابات البكتيرية الحساسة للأموكسيسيلين.",
+      "featured": false,
+      "image": "med-007.svg"
+    },
+    {
+      "id": "med-008",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Pen & Strep (بنسلين وستربتومايسين)",
+      "company": "Norbrook",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "خيول"
+      ],
+      "description": "مضاد حيوي مركب من البنسلين والستربتومايسين، من أقدم وأشهر التركيبات البيطرية عالميًا.",
+      "usage": "لعلاج مجموعة واسعة من الالتهابات البكتيرية في الماشية.",
+      "featured": false,
+      "image": "med-008.svg"
+    },
+    {
+      "id": "med-009",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Excenel RTU (سيفتيوفور)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "خيول"
+      ],
+      "description": "مضاد حيوي من مجموعة السيفالوسبورين جاهز للاستخدام.",
+      "usage": "لعلاج الالتهابات البكتيرية التنفسية وغيرها في الماشية.",
+      "featured": false,
+      "image": "med-009.svg"
+    },
+    {
+      "id": "med-010",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Marbocyl (ماربوفلوكساسين)",
+      "company": "Vetoquinol",
+      "animal": [
+        "أبقار",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مضاد حيوي من مجموعة الفلوروكينولونات من علامة بيطرية أوروبية معروفة.",
+      "usage": "لعلاج الالتهابات البكتيرية في الماشية والحيوانات الأليفة.",
+      "featured": false,
+      "image": "med-010.svg"
+    },
+    {
+      "id": "med-011",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Synulox (أموكسيسيلين + كلافولانيك أسيد)",
+      "company": "Zoetis",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مضاد حيوي مركب واسع الطيف من أشهر العلامات في طب الحيوانات الأليفة.",
+      "usage": "لعلاج الالتهابات البكتيرية الجلدية والتنفسية والبولية في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-011.svg"
+    },
+    {
+      "id": "med-012",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Clamoxyl (أموكسيسيلين)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "مضاد حيوي حقن من مجموعة البنسلينات معروف في الماشية.",
+      "usage": "لعلاج الالتهابات البكتيرية الحساسة للأموكسيسيلين في الماشية.",
+      "featured": false,
+      "image": "med-012.svg"
+    },
+    {
+      "id": "med-013",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "Duphacycline (أوكسي تتراسيكلين)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "خيول"
+      ],
+      "description": "مضاد حيوي حقن طويل المفعول من مجموعة التتراسيكلين.",
+      "usage": "لعلاج الالتهابات البكتيرية في الماشية.",
+      "featured": false,
+      "image": "med-013.svg"
+    },
+    {
+      "id": "med-014",
+      "category": "medicines",
+      "subcategory": "مضادات حيوية",
+      "name": "جنتاميسين حقن (Gentamicin)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "خيول"
+      ],
+      "description": "مضاد حيوي حقن عام (جنريك) من مجموعة الأمينوغليكوزيد.",
+      "usage": "لعلاج بعض الالتهابات البكتيرية تحت إشراف طبيب بيطري.",
+      "featured": false,
+      "image": "med-014.svg"
+    },
+    {
+      "id": "med-015",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Ivomec (إيفرمكتين)",
+      "company": "Boehringer Ingelheim (Merial)",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "خيول"
+      ],
+      "description": "من أشهر مضادات الطفيليات الداخلية والخارجية عالميًا في الطب البيطري.",
+      "usage": "لمكافحة الديدان الداخلية وبعض الطفيليات الخارجية في الماشية والخيول.",
+      "featured": true,
+      "image": "med-015.svg"
+    },
+    {
+      "id": "med-016",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Dectomax (دوراميكتين)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "مضاد طفيليات حقن واسع الطيف طويل المفعول.",
+      "usage": "لمكافحة الديدان الداخلية والخارجية في الماشية.",
+      "featured": false,
+      "image": "med-016.svg"
+    },
+    {
+      "id": "med-017",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Panacur (فينبندازول)",
+      "company": "MSD Animal Health (Intervet)",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "خيول",
+        "كلاب"
+      ],
+      "description": "طارد ديدان واسع الطيف من أشهر العلامات البيطرية العالمية.",
+      "usage": "لعلاج الإصابة بالديدان الداخلية في عدة أنواع من الحيوانات.",
+      "featured": false,
+      "image": "med-017.svg"
+    },
+    {
+      "id": "med-018",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Valbazen (ألبيندازول)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "طارد ديدان واسع الطيف شائع الاستخدام في الماشية.",
+      "usage": "لمكافحة الديدان الداخلية في الأبقار والأغنام والماعز.",
+      "featured": false,
+      "image": "med-018.svg"
+    },
+    {
+      "id": "med-019",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Frontline (فيبرونيل)",
+      "company": "Boehringer Ingelheim (Merial)",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "علاج موضعي (Spot-on) من أشهر العلامات التجارية عالميًا لمكافحة البراغيث والقراد.",
+      "usage": "لمكافحة البراغيث والقراد الخارجية في الكلاب والقطط.",
+      "featured": true,
+      "image": "med-019.svg"
+    },
+    {
+      "id": "med-020",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Bravecto (فلورالانر)",
+      "company": "MSD Animal Health",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "علاج طويل المفعول (أقراص أو موضعي) لمكافحة البراغيث والقراد.",
+      "usage": "لمكافحة البراغيث والقراد لفترة طويلة في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-020.svg"
+    },
+    {
+      "id": "med-021",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "NexGard (أفوكسولانر)",
+      "company": "Boehringer Ingelheim",
+      "animal": [
+        "كلاب"
+      ],
+      "description": "أقراص مضغ شهرية لمكافحة البراغيث والقراد من العلامات المعروفة عالميًا.",
+      "usage": "لمكافحة البراغيث والقراد في الكلاب.",
+      "featured": false,
+      "image": "med-021.svg"
+    },
+    {
+      "id": "med-022",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Drontal Plus (برازيكوانتيل/بيرانتيل/فيبانتيل)",
+      "company": "Bayer Animal Health / Elanco",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "طارد ديدان واسع الطيف من أشهر العلامات التجارية البيطرية عالميًا.",
+      "usage": "لعلاج الإصابة بالديدان الداخلية الشائعة في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-022.svg"
+    },
+    {
+      "id": "med-023",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Advantage (إيميداكلوبرايد)",
+      "company": "Bayer Animal Health / Elanco",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "علاج موضعي (Spot-on) لمكافحة البراغيث.",
+      "usage": "لمكافحة البراغيث الخارجية في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-023.svg"
+    },
+    {
+      "id": "med-024",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "ألبيندازول 10% (Albendazole)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "طارد ديدان عام (جنريك) متعدد الموردين شائع الاستخدام في الماشية.",
+      "usage": "لمكافحة الديدان الداخلية في الماشية.",
+      "featured": false,
+      "image": "med-024.svg"
+    },
+    {
+      "id": "med-025",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Eqvalan (إيفرمكتين للخيول)",
+      "company": "Boehringer Ingelheim (Merial)",
+      "animal": [
+        "خيول"
+      ],
+      "description": "معجون فموي مضاد للطفيليات مخصص للخيول من علامة بيطرية عالمية معروفة.",
+      "usage": "لمكافحة الديدان الداخلية في الخيول.",
+      "featured": false,
+      "image": "med-025.svg"
+    },
+    {
+      "id": "med-026",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Cydectin (موكسيديكتين)",
+      "company": "Zoetis",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "مضاد طفيليات واسع الطيف طويل المفعول.",
+      "usage": "لمكافحة الديدان الداخلية والخارجية في الماشية.",
+      "featured": false,
+      "image": "med-026.svg"
+    },
+    {
+      "id": "med-027",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Eprinex (إبرينوميكتين)",
+      "company": "Boehringer Ingelheim (Merial)",
+      "animal": [
+        "أبقار"
+      ],
+      "description": "مضاد طفيليات يُستخدم بطريقة الصب على الظهر (Pour-on).",
+      "usage": "لمكافحة الديدان الداخلية والخارجية في الأبقار دون فترة انتظار للحليب.",
+      "featured": false,
+      "image": "med-027.svg"
+    },
+    {
+      "id": "med-028",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Heartgard (إيفرمكتين/بيرانتيل)",
+      "company": "Boehringer Ingelheim (Merial)",
+      "animal": [
+        "كلاب"
+      ],
+      "description": "أقراص شهرية للوقاية من دودة القلب، من أشهر العلامات عالميًا.",
+      "usage": "للوقاية من دودة القلب ومكافحة بعض الديدان المعوية في الكلاب.",
+      "featured": false,
+      "image": "med-028.svg"
+    },
+    {
+      "id": "med-029",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Revolution / Stronghold (سيلامكتين)",
+      "company": "Zoetis",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "علاج موضعي شامل يغطي عدة طفيليات داخلية وخارجية.",
+      "usage": "لمكافحة البراغيث ودودة القلب وبعض الطفيليات الداخلية في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-029.svg"
+    },
+    {
+      "id": "med-030",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Seresto (طوق إيميداكلوبرايد/فلوميثرين)",
+      "company": "Bayer Animal Health / Elanco",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "طوق طويل المفعول لمكافحة البراغيث والقراد من علامة معروفة عالميًا.",
+      "usage": "لمكافحة البراغيث والقراد لعدة أشهر في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-030.svg"
+    },
+    {
+      "id": "med-031",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Milbemax (ميلبيميسين/برازيكوانتيل)",
+      "company": "Elanco",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "أقراص طاردة للديدان واسعة الطيف.",
+      "usage": "لعلاج الديدان الداخلية الشائعة في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-031.svg"
+    },
+    {
+      "id": "med-032",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Program (لوفينيورون)",
+      "company": "Elanco",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مانع لنمو البراغيث يُعطى فمويًا أو حقنًا.",
+      "usage": "للمساعدة في كسر دورة حياة البراغيث في الكلاب والقطط.",
+      "featured": false,
+      "image": "med-032.svg"
+    },
+    {
+      "id": "med-033",
+      "category": "medicines",
+      "subcategory": "أدوية طفيليات وديدان",
+      "name": "Baycox (تولترازوريل)",
+      "company": "Bayer Animal Health / Elanco",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "علاج مضاد للكوكسيديا من علامة معروفة عالميًا.",
+      "usage": "لعلاج والوقاية من الكوكسيديا في الدواجن والماشية الصغيرة.",
+      "featured": false,
+      "image": "med-033.svg"
+    },
+    {
+      "id": "med-034",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "Catosal",
+      "company": "Bayer Animal Health / Elanco",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "خيول",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مكمل حقن معروف عالميًا يحتوي فيتامين B12 وحمض الفوسفور العضوي.",
+      "usage": "يُستخدم كداعم عام للحيوية والتمثيل الغذائي بعد الإجهاد أو المرض.",
+      "featured": true,
+      "image": "med-034.svg"
+    },
+    {
+      "id": "med-035",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "فيتامين ADE حقن (A+D3+E)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "دواجن",
+        "خيول"
+      ],
+      "description": "مستحضر فيتامينات عام (جنريك) شائع في الطب البيطري متعدد الموردين.",
+      "usage": "يُستخدم كمكمل فيتامينات عام لدعم النمو والمناعة.",
+      "featured": false,
+      "image": "med-035.svg"
+    },
+    {
+      "id": "med-036",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "مركب أحماض أمينية حقن (Amino Acids)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "خيول",
+        "كلاب"
+      ],
+      "description": "مكمل غذائي حقن عام يحتوي أحماض أمينية أساسية.",
+      "usage": "يُستخدم كداعم غذائي عام في حالات الإجهاد أو ضعف النمو.",
+      "featured": false,
+      "image": "med-036.svg"
+    },
+    {
+      "id": "med-037",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "فيتامين ب المركب حقن (Vitamin B Complex)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "خيول",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مستحضر فيتامينات ب المركبة، شائع الاستخدام في معظم أنواع الحيوانات.",
+      "usage": "يُستخدم كمكمل غذائي داعم لوظائف الجهاز العصبي والتمثيل الغذائي.",
+      "featured": false,
+      "image": "med-037.svg"
+    },
+    {
+      "id": "med-038",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "بريمكس فيتامينات ومعادن للدواجن (Poultry Premix)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "خليط فيتامينات ومعادن يُضاف إلى علف أو ماء الدواجن.",
+      "usage": "يُستخدم لدعم النمو والإنتاج في قطعان الدواجن.",
+      "featured": false,
+      "image": "med-038.svg"
+    },
+    {
+      "id": "med-039",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "كالسيوم بوروجلوكونات حقن (Calcium Borogluconate)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "محلول كالسيوم حقن شائع الاستخدام في الماشية حول موسم الولادة.",
+      "usage": "يُستخدم كمكمل كالسيوم في حالات نقص الكالسيوم بالماشية تحت إشراف بيطري.",
+      "featured": false,
+      "image": "med-039.svg"
+    },
+    {
+      "id": "med-040",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "Duphalyte",
+      "company": "Zoetis",
+      "animal": [
+        "خيول",
+        "أبقار",
+        "كلاب"
+      ],
+      "description": "محلول حقن يجمع فيتامينات وأملاح معدنية وأحماض أمينية، معروف خصوصًا في طب الخيول.",
+      "usage": "يُستخدم كمحلول داعم شامل في حالات الإجهاد أو ضعف الحيوية.",
+      "featured": false,
+      "image": "med-040.svg"
+    },
+    {
+      "id": "med-041",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "حديد ديكستران حقن (Iron Dextran)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "مكمل حديد حقن شائع الاستخدام لمواليد الماشية حديثي الولادة.",
+      "usage": "للوقاية من فقر الدم الناتج عن نقص الحديد في المواليد الصغيرة.",
+      "featured": false,
+      "image": "med-041.svg"
+    },
+    {
+      "id": "med-042",
+      "category": "medicines",
+      "subcategory": "فيتامينات ومكملات",
+      "name": "سيلينيوم + فيتامين E حقن",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "مكمل حقن شائع يجمع السيلينيوم وفيتامين E.",
+      "usage": "يُستخدم كداعم عضلي ومناعي في الماشية والصغار.",
+      "featured": false,
+      "image": "med-042.svg"
+    },
+    {
+      "id": "med-043",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "Virkon S",
+      "company": "Lanxess",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "أغنام",
+        "خيول"
+      ],
+      "description": "مطهر واسع الطيف معروف عالميًا لتطهير العنابر والمعدات البيطرية.",
+      "usage": "يُستخدم لتطهير الحظائر والعنابر والمعدات البيطرية.",
+      "featured": true,
+      "image": "med-043.svg"
+    },
+    {
+      "id": "med-044",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "Betadine (بوفيدون آيودين)",
+      "company": "Mundipharma",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أبقار",
+        "خيول"
+      ],
+      "description": "محلول مطهر معروف عالميًا يُستخدم لتطهير الجروح والجلد.",
+      "usage": "يُستخدم كمطهر موضعي للجروح والجلد قبل الإجراءات البيطرية.",
+      "featured": false,
+      "image": "med-044.svg"
+    },
+    {
+      "id": "med-045",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "Hibiscrub (كلورهيكسيدين)",
+      "company": "Mölnlycke",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أبقار",
+        "خيول"
+      ],
+      "description": "غسول مطهر يحتوي كلورهيكسيدين جلوكونات، شائع الاستخدام قبل العمليات الجراحية.",
+      "usage": "يُستخدم لتطهير الجلد والأدوات قبل الإجراءات الجراحية البيطرية.",
+      "featured": false,
+      "image": "med-045.svg"
+    },
+    {
+      "id": "med-046",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "فورمالين محلول تطهير (Formaldehyde Solution)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "محلول تطهير كيميائي عام شائع الاستخدام في تطهير عنابر الدواجن.",
+      "usage": "يُستخدم لتطهير العنابر والمعدات في مزارع الدواجن.",
+      "featured": false,
+      "image": "med-046.svg"
+    },
+    {
+      "id": "med-047",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "مطهر أسطح للعنابر والحظائر (أمونيوم رباعي)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "مطهر سطحي عام من مركبات الأمونيوم الرباعي.",
+      "usage": "يُستخدم لتطهير أرضيات وأسطح الحظائر والعنابر.",
+      "featured": false,
+      "image": "med-047.svg"
+    },
+    {
+      "id": "med-048",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "Longlife 250S",
+      "company": "Neogen",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "مطهر مركّز واسع الطيف شائع الاستخدام في المزارع والعنابر.",
+      "usage": "يُستخدم لتطهير المعدات والعنابر الزراعية والحيوانية.",
+      "featured": false,
+      "image": "med-048.svg"
+    },
+    {
+      "id": "med-049",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "Virocid",
+      "company": "CID Lines",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "أغنام",
+        "خيول"
+      ],
+      "description": "مطهر زراعي واسع الطيف من علامة أوروبية معروفة في مجال النظافة الحيوانية.",
+      "usage": "يُستخدم لتطهير العنابر والمعدات ووسائل النقل الحيوانية.",
+      "featured": false,
+      "image": "med-049.svg"
+    },
+    {
+      "id": "med-050",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "F10",
+      "company": "Health and Hygiene",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "دواجن"
+      ],
+      "description": "مطهر واسع الطيف معروف في العيادات البيطرية ومراكز إعادة تأهيل الحيوانات.",
+      "usage": "يُستخدم لتطهير العيادات والأقفاص والمعدات البيطرية.",
+      "featured": false,
+      "image": "med-050.svg"
+    },
+    {
+      "id": "med-051",
+      "category": "medicines",
+      "subcategory": "مطهرات",
+      "name": "محلول غمس حلمات مطهر (Iodine Teat Dip)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار"
+      ],
+      "description": "محلول مطهر يعتمد على اليود يُستخدم لغمس حلمات الأبقار بعد الحلب.",
+      "usage": "للعناية بصحة الضرع والوقاية من التهابات الحلمات.",
+      "featured": false,
+      "image": "med-051.svg"
+    },
+    {
+      "id": "med-052",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "Amprolium (أمبروليوم)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "مستحضر مضاد للكوكسيديا شائع الاستخدام في مزارع الدواجن.",
+      "usage": "يُستخدم في برامج مكافحة الكوكسيديا لدى الدواجن تحت إشراف بيطري.",
+      "featured": false,
+      "image": "med-052.svg"
+    },
+    {
+      "id": "med-053",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "Meloxicam (مسكن ومضاد التهاب)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أبقار",
+        "خيول"
+      ],
+      "description": "مضاد التهاب غير ستيرويدي شائع الاستخدام بيطريًا لتسكين الألم.",
+      "usage": "يُستخدم لتسكين الألم وتقليل الالتهاب تحت إشراف طبيب بيطري.",
+      "featured": false,
+      "image": "med-053.svg"
+    },
+    {
+      "id": "med-054",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "محلول ملحي وريدي (Normal Saline 0.9%)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "خيول",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "محلول معالجة وريدية أساسي شائع الاستخدام بيطريًا.",
+      "usage": "يُستخدم للإماهة الوريدية وتعويض السوائل تحت إشراف بيطري.",
+      "featured": false,
+      "image": "med-054.svg"
+    },
+    {
+      "id": "med-055",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "محلول جلوكوز وريدي 5%",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "خيول",
+        "كلاب"
+      ],
+      "description": "محلول معالجة وريدية أساسي لتعويض الطاقة والسوائل.",
+      "usage": "يُستخدم كمحلول وريدي داعم تحت إشراف طبيب بيطري.",
+      "featured": false,
+      "image": "med-055.svg"
+    },
+    {
+      "id": "med-056",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "Metacam (ميلوكسيكام)",
+      "company": "Boehringer Ingelheim",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أبقار",
+        "خيول"
+      ],
+      "description": "مضاد التهاب غير ستيرويدي من أشهر العلامات البيطرية عالميًا.",
+      "usage": "لتسكين الألم وتقليل الالتهاب في عدة أنواع من الحيوانات.",
+      "featured": true,
+      "image": "med-056.svg"
+    },
+    {
+      "id": "med-057",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "Rimadyl (كاربروفين)",
+      "company": "Zoetis",
+      "animal": [
+        "كلاب"
+      ],
+      "description": "مضاد التهاب غير ستيرويدي معروف عالميًا خصيصًا للكلاب.",
+      "usage": "لتسكين الألم المرتبط بالتهاب المفاصل والعمليات الجراحية في الكلاب.",
+      "featured": false,
+      "image": "med-057.svg"
+    },
+    {
+      "id": "med-058",
+      "category": "medicines",
+      "subcategory": "أدوية أخرى",
+      "name": "Buscopan (هيوسين بيوتيل بروميد)",
+      "company": "Boehringer Ingelheim",
+      "animal": [
+        "خيول"
+      ],
+      "description": "مضاد تشنج معروف عالميًا يُستخدم في حالات المغص عند الخيول.",
+      "usage": "يُستخدم للمساعدة في تخفيف التشنجات المعوية في حالات المغص بالخيول.",
+      "featured": false,
+      "image": "med-058.svg"
+    },
+    {
+      "id": "too-001",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "ترمومتر بيطري رقمي",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "جهاز قياس حرارة رقمي مخصص للاستخدام البيطري.",
+      "usage": "لقياس درجة حرارة الحيوان بسرعة ودقة في العيادة أو المزرعة.",
+      "featured": true,
+      "image": "too-001.svg"
+    },
+    {
+      "id": "too-002",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "سماعة طبية بيطرية (Stethoscope)",
+      "company": "3M Littmann",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "سماعة طبية من علامة معروفة عالميًا تُستخدم أيضًا في الفحص البيطري.",
+      "usage": "للفحص السريري وسماع أصوات القلب والرئتين.",
+      "featured": false,
+      "image": "too-002.svg"
+    },
+    {
+      "id": "too-003",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "منظار أذن وعين بيطري (Otoscope)",
+      "company": "Welch Allyn",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "جهاز فحص إضاءة للأذن والعين من علامة معروفة في الأجهزة التشخيصية.",
+      "usage": "لفحص القناة السمعية والعين لدى الحيوانات الأليفة.",
+      "featured": false,
+      "image": "too-003.svg"
+    },
+    {
+      "id": "too-004",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "طاولة فحص بيطرية قابلة للتعديل",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "طاولة فحص من ستانلس ستيل تُستخدم في العيادات البيطرية.",
+      "usage": "لإجراء الفحص السريري والإجراءات البسيطة على الحيوانات الأليفة.",
+      "featured": false,
+      "image": "too-004.svg"
+    },
+    {
+      "id": "too-005",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "جهاز قياس ضغط الدم البيطري",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "جهاز قياس ضغط دم مخصص للاستخدام البيطري.",
+      "usage": "لمتابعة ضغط الدم في الحالات السريرية والعمليات الجراحية.",
+      "featured": false,
+      "image": "too-005.svg"
+    },
+    {
+      "id": "too-006",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "ميزان بيطري رقمي للحيوانات الصغيرة",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أرانب"
+      ],
+      "description": "ميزان رقمي لقياس وزن الحيوانات الصغيرة والأليفة بدقة.",
+      "usage": "لمتابعة وزن الحيوان الأليف بشكل دوري في العيادة أو المنزل.",
+      "featured": false,
+      "image": "too-006.svg"
+    },
+    {
+      "id": "too-007",
+      "category": "tools",
+      "subcategory": "مستلزمات العيادات البيطرية",
+      "name": "جهاز تعقيم أدوات جراحية (Autoclave)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "جهاز تعقيم بالبخار لتعقيم الأدوات الجراحية داخل العيادة.",
+      "usage": "لتعقيم الأدوات الجراحية والمستلزمات القابلة لإعادة الاستخدام.",
+      "featured": false,
+      "image": "too-007.svg"
+    },
+    {
+      "id": "too-008",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "سرنجة بلاستيك 5 مل معقمة",
+      "company": "BD (Becton Dickinson)",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "سرنجة طبية معقمة للاستخدام مرة واحدة من علامة معروفة عالميًا.",
+      "usage": "للحقن البيطري بمختلف أنواعه تحت إشراف بيطري.",
+      "featured": true,
+      "image": "too-008.svg"
+    },
+    {
+      "id": "too-009",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "سرنجة بلاستيك 10 مل معقمة",
+      "company": "BD (Becton Dickinson)",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "سرنجة طبية معقمة للاستخدام مرة واحدة.",
+      "usage": "للحقن البيطري في الحيوانات متوسطة وكبيرة الحجم.",
+      "featured": false,
+      "image": "too-009.svg"
+    },
+    {
+      "id": "too-010",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "سرنجة بلاستيك 20 مل معقمة",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "سرنجة طبية معقمة سعة كبيرة للاستخدام مرة واحدة.",
+      "usage": "للحقن أو سحب السوائل بكميات أكبر تحت إشراف بيطري.",
+      "featured": false,
+      "image": "too-010.svg"
+    },
+    {
+      "id": "too-011",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "سرنجة بلاستيك 2 مل معقمة",
+      "company": "Kruuse",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أرانب"
+      ],
+      "description": "سرنجة طبية صغيرة الحجم مناسبة للحيوانات الأليفة الصغيرة.",
+      "usage": "للحقن الدقيق في الحيوانات الأليفة صغيرة الحجم.",
+      "featured": false,
+      "image": "too-011.svg"
+    },
+    {
+      "id": "too-012",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "سرنجة أنسولين 1 مل (Micro-Fine)",
+      "company": "BD (Becton Dickinson)",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "سرنجة دقيقة معروفة عالميًا لجرعات صغيرة الحجم.",
+      "usage": "لحقن الجرعات الدقيقة مثل الإنسولين في الحيوانات الأليفة الصغيرة.",
+      "featured": false,
+      "image": "too-012.svg"
+    },
+    {
+      "id": "too-013",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "إبر بيطرية مقاس 18G",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "خيول"
+      ],
+      "description": "إبر حقن معقمة مقاس متوسط شائعة الاستخدام في الماشية.",
+      "usage": "للحقن العضلي أو تحت الجلد في الماشية.",
+      "featured": false,
+      "image": "too-013.svg"
+    },
+    {
+      "id": "too-014",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "إبر بيطرية مقاس 21G",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "إبر حقن معقمة مقاس أدق مناسبة للحيوانات الأليفة الصغيرة.",
+      "usage": "للحقن العضلي أو تحت الجلد في الحيوانات الأليفة.",
+      "featured": false,
+      "image": "too-014.svg"
+    },
+    {
+      "id": "too-015",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "قسطرة وريدية (BD Insyte)",
+      "company": "BD (Becton Dickinson)",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "خيول"
+      ],
+      "description": "قسطرة وريدية معروفة عالميًا تُستخدم لتركيب خط وريدي.",
+      "usage": "لتركيب محلول وريدي أو إعطاء أدوية وريدية تحت إشراف بيطري.",
+      "featured": false,
+      "image": "too-015.svg"
+    },
+    {
+      "id": "too-016",
+      "category": "tools",
+      "subcategory": "سرنجات وإبر",
+      "name": "سرنجة تلقيح أوتوماتيكية للدواجن والماشية",
+      "company": "Kruuse",
+      "animal": [
+        "دواجن",
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "سرنجة تلقيح متكررة الجرعة من علامة بيطرية معروفة.",
+      "usage": "لتحصين أو حقن أعداد كبيرة من الحيوانات بسرعة وكفاءة.",
+      "featured": false,
+      "image": "too-016.svg"
+    },
+    {
+      "id": "too-017",
+      "category": "tools",
+      "subcategory": "قفازات",
+      "name": "قفازات فحص بيطرية لاتكس",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "قفازات فحص طبية من اللاتكس للاستخدام مرة واحدة.",
+      "usage": "للحماية أثناء الفحص السريري والإجراءات البيطرية البسيطة.",
+      "featured": false,
+      "image": "too-017.svg"
+    },
+    {
+      "id": "too-018",
+      "category": "tools",
+      "subcategory": "قفازات",
+      "name": "قفازات فحص نيتريل خالية من البودرة",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "قفازات فحص طبية من النيتريل مناسبة لمن لديهم حساسية من اللاتكس.",
+      "usage": "للحماية أثناء الفحص السريري والتعامل مع الأدوية.",
+      "featured": false,
+      "image": "too-018.svg"
+    },
+    {
+      "id": "too-019",
+      "category": "tools",
+      "subcategory": "قفازات",
+      "name": "قفازات طويلة للفحص والتوليد البيطري",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز",
+        "خيول"
+      ],
+      "description": "قفازات طويلة تصل للكتف تُستخدم في الفحص الداخلي والتوليد.",
+      "usage": "لإجراءات الفحص الداخلي والمساعدة في الولادة بالماشية.",
+      "featured": false,
+      "image": "too-019.svg"
+    },
+    {
+      "id": "too-020",
+      "category": "tools",
+      "subcategory": "قفازات",
+      "name": "قفازات جراحية معقمة",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "قفازات جراحية معقمة للاستخدام مرة واحدة.",
+      "usage": "للاستخدام أثناء العمليات الجراحية البيطرية.",
+      "featured": false,
+      "image": "too-020.svg"
+    },
+    {
+      "id": "too-021",
+      "category": "tools",
+      "subcategory": "شاش وقطن",
+      "name": "شاش طبي معقم",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "لفافات وضمادات شاش طبي معقم.",
+      "usage": "للعناية بالجروح وتضميدها بعد الإصابات أو العمليات.",
+      "featured": false,
+      "image": "too-021.svg"
+    },
+    {
+      "id": "too-022",
+      "category": "tools",
+      "subcategory": "شاش وقطن",
+      "name": "قطن طبي",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "قطن طبي عام للاستخدامات البيطرية اليومية.",
+      "usage": "لتنظيف الجروح والتحضير قبل الحقن أو الإجراءات البسيطة.",
+      "featured": false,
+      "image": "too-022.svg"
+    },
+    {
+      "id": "too-023",
+      "category": "tools",
+      "subcategory": "شاش وقطن",
+      "name": "رباط ضاغط بيطري ذاتي اللصق (Vetrap)",
+      "company": "3M Vetrap",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "خيول",
+        "كلاب"
+      ],
+      "description": "رباط ضاغط مرن ذاتي اللصق من علامة معروفة عالميًا في المجال البيطري.",
+      "usage": "لتثبيت الضمادات وتضميد الأطراف في الحيوانات.",
+      "featured": false,
+      "image": "too-023.svg"
+    },
+    {
+      "id": "too-024",
+      "category": "tools",
+      "subcategory": "شاش وقطن",
+      "name": "شاش تعقيم للجروح البيطرية",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "شاش معقم مخصص للتعامل مع الجروح المفتوحة.",
+      "usage": "لتنظيف وتضميد الجروح البيطرية.",
+      "featured": false,
+      "image": "too-024.svg"
+    },
+    {
+      "id": "too-025",
+      "category": "tools",
+      "subcategory": "شاش وقطن",
+      "name": "شريط لاصق طبي (Elastoplast)",
+      "company": "Elastoplast (Beiersdorf)",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "شريط لاصق طبي مرن من علامة معروفة عالميًا يُستخدم لتثبيت الضمادات.",
+      "usage": "لتثبيت الشاش والضمادات على الجروح.",
+      "featured": false,
+      "image": "too-025.svg"
+    },
+    {
+      "id": "too-026",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "طقم أدوات جراحية بيطرية أساسية",
+      "company": "Jorgensen Labs",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "طقم أدوات جراحية (ملقط، مقص، مشرط) من علامة معروفة في المجال البيطري.",
+      "usage": "للاستخدام في العمليات الجراحية والإجراءات البيطرية البسيطة.",
+      "featured": false,
+      "image": "too-026.svg"
+    },
+    {
+      "id": "too-027",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "خيوط جراحية قابلة للامتصاص",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "خيوط جراحية طبية قابلة للامتصاص تُستخدم في إغلاق الجروح.",
+      "usage": "لإغلاق الجروح الجراحية البيطرية.",
+      "featured": false,
+      "image": "too-027.svg"
+    },
+    {
+      "id": "too-028",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "أطباق بتري ومعدات معملية بسيطة",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "أدوات معملية بسيطة للفحوصات الأولية في العيادة البيطرية.",
+      "usage": "للفحوصات المعملية البسيطة كفحص العينات الميدانية.",
+      "featured": false,
+      "image": "too-028.svg"
+    },
+    {
+      "id": "too-029",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "أكياس تخلص من المخلفات الطبية",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "أكياس مخصصة للتخلص الآمن من المخلفات الطبية في العيادة.",
+      "usage": "للتخلص الآمن من المخلفات الطبية داخل العيادة البيطرية.",
+      "featured": false,
+      "image": "too-029.svg"
+    },
+    {
+      "id": "too-030",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "مسحات كحول معقمة (Alcohol Swabs)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "مسحات معقمة مبللة بالكحول للتعقيم السريع قبل الحقن.",
+      "usage": "لتعقيم موضع الحقن قبل إعطاء الأدوية.",
+      "featured": false,
+      "image": "too-030.svg"
+    },
+    {
+      "id": "too-031",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "أنابيب تجميع عينات دم (Blood Collection Tubes)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "جميع الحيوانات"
+      ],
+      "description": "أنابيب معقمة لسحب وتجميع عينات الدم للتحاليل.",
+      "usage": "لسحب عينات الدم لإرسالها للتحليل المعملي.",
+      "featured": false,
+      "image": "too-031.svg"
+    },
+    {
+      "id": "too-032",
+      "category": "tools",
+      "subcategory": "مستلزمات طبية عامة",
+      "name": "طقم محلول وريدي (IV Giving Set)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "خيول",
+        "كلاب",
+        "قطط"
+      ],
+      "description": "طقم توصيل المحاليل الوريدية للاستخدام مرة واحدة.",
+      "usage": "لإعطاء المحاليل الوريدية تحت إشراف طبيب بيطري.",
+      "featured": false,
+      "image": "too-032.svg"
+    },
+    {
+      "id": "too-033",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "أقراط تعريف الماشية (Ear Tags)",
+      "company": "Allflex",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "أقراط تعريف بلاستيكية للماشية من علامة معروفة عالميًا في هذا المجال.",
+      "usage": "لتعريف وتتبع رؤوس الماشية في المزرعة.",
+      "featured": true,
+      "image": "too-033.svg"
+    },
+    {
+      "id": "too-034",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "مسدس ترقيم الأذن (Tagger Gun)",
+      "company": "Allflex",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "أداة لتثبيت أقراط تعريف الأذن في الماشية.",
+      "usage": "لتركيب أقراط التعريف في آذان الماشية.",
+      "featured": false,
+      "image": "too-034.svg"
+    },
+    {
+      "id": "too-035",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "مسدس جرعات الديدان (Drenching Gun)",
+      "company": "Kruuse",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "أداة لإعطاء جرعات طاردات الديدان الفموية للماشية بكفاءة.",
+      "usage": "لإعطاء جرعات الأدوية الفموية لعدد كبير من رؤوس الماشية.",
+      "featured": false,
+      "image": "too-035.svg"
+    },
+    {
+      "id": "too-036",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "مقص تقليم الأظلاف (Hoof Trimmer)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "أداة يدوية لتقليم أظلاف الماشية.",
+      "usage": "للعناية بأظلاف الماشية ومنع مشاكل المشي.",
+      "featured": false,
+      "image": "too-036.svg"
+    },
+    {
+      "id": "too-037",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "حبل ربط ماشية (Cattle Halter)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "حبل/رسن لربط وتثبيت رأس الماشية أثناء الفحص أو النقل.",
+      "usage": "لتثبيت الحيوان أثناء الإجراءات البيطرية أو النقل.",
+      "featured": false,
+      "image": "too-037.svg"
+    },
+    {
+      "id": "too-038",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "كلابة أنف للأبقار (Bull Nose Ring/Tongs)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار"
+      ],
+      "description": "أداة تثبيت أنف تُستخدم في التعامل الآمن مع الثيران والأبقار الكبيرة.",
+      "usage": "للتحكم الآمن بالأبقار كبيرة الحجم أثناء الفحص أو العلاج.",
+      "featured": false,
+      "image": "too-038.svg"
+    },
+    {
+      "id": "too-039",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "ميزان وزن ماشية (Livestock Scale)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "ميزان أرضي لقياس وزن رؤوس الماشية بدقة في المزرعة.",
+      "usage": "لمتابعة وزن الحيوانات دوريًا في المزرعة.",
+      "featured": false,
+      "image": "too-039.svg"
+    },
+    {
+      "id": "too-040",
+      "category": "tools",
+      "subcategory": "مستلزمات مزارع",
+      "name": "حوض تطهير أرجل (Foot Bath)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "حوض يُملأ بمحلول مطهر لغمس أرجل الماشية عند دخول الحظيرة.",
+      "usage": "للوقاية من التهابات وأمراض الأظلاف في القطيع.",
+      "featured": false,
+      "image": "too-040.svg"
+    },
+    {
+      "id": "too-041",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "طوق حماية بعد العمليات (Elizabethan Collar)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "طوق بلاستيكي واقٍ يُستخدم بعد العمليات الجراحية أو لمنع لعق الجروح.",
+      "usage": "لمنع الحيوان من لعق أو خدش الجروح بعد العمليات.",
+      "featured": true,
+      "image": "too-041.svg"
+    },
+    {
+      "id": "too-042",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "حزام تجول وربط للكلاب (Leash & Collar)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب"
+      ],
+      "description": "طوق وحزام تجول أساسي للكلاب.",
+      "usage": "للتنزه الآمن والتحكم بالكلب خارج المنزل.",
+      "featured": false,
+      "image": "too-042.svg"
+    },
+    {
+      "id": "too-043",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "قفص نقل للحيوانات الأليفة (Pet Carrier)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط",
+        "أرانب"
+      ],
+      "description": "قفص نقل آمن ومهوّى للحيوانات الأليفة الصغيرة.",
+      "usage": "لنقل الحيوان الأليف بأمان إلى العيادة أو أثناء السفر.",
+      "featured": false,
+      "image": "too-043.svg"
+    },
+    {
+      "id": "too-044",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "فرشاة عناية بالفرو (Pet Grooming Brush)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "فرشاة عناية أساسية لتنظيف وتصفيف فرو الحيوانات الأليفة.",
+      "usage": "للعناية اليومية بفرو الكلاب والقطط.",
+      "featured": false,
+      "image": "too-044.svg"
+    },
+    {
+      "id": "too-045",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "شامبو طبي للكلاب والقطط",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "شامبو عناية عام مخصص لبشرة وفراء الحيوانات الأليفة.",
+      "usage": "للاستحمام الدوري والعناية ببشرة وفراء الحيوان الأليف.",
+      "featured": false,
+      "image": "too-045.svg"
+    },
+    {
+      "id": "too-046",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "شريحة تعريف إلكترونية (Microchip)",
+      "company": "Datamars",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "شريحة تعريف إلكترونية دقيقة تُزرع تحت الجلد من علامة معروفة عالميًا في تعريف الحيوانات.",
+      "usage": "لتعريف وتتبع هوية الحيوان الأليف بشكل دائم.",
+      "featured": false,
+      "image": "too-046.svg"
+    },
+    {
+      "id": "too-047",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "مقص أظافر للحيوانات الأليفة (Nail Clipper)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "كلاب",
+        "قطط"
+      ],
+      "description": "مقص مخصص لتقليم أظافر الكلاب والقطط.",
+      "usage": "للعناية الدورية بأظافر الحيوان الأليف.",
+      "featured": false,
+      "image": "too-047.svg"
+    },
+    {
+      "id": "too-048",
+      "category": "tools",
+      "subcategory": "مستلزمات حيوانات أليفة",
+      "name": "صندوق فضلات للقطط (Litter Box)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "قطط"
+      ],
+      "description": "صندوق فضلات أساسي للقطط المنزلية.",
+      "usage": "لتوفير مكان مخصص لقضاء حاجة القطط داخل المنزل.",
+      "featured": false,
+      "image": "too-048.svg"
+    },
+    {
+      "id": "too-049",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "مسدس تحصين الدواجن (Vaccination Gun)",
+      "company": "Kruuse",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "أداة لتحصين أعداد كبيرة من الدواجن بسرعة وكفاءة.",
+      "usage": "لتحصين قطعان الدواجن ضمن برامج التحصين البيطرية.",
+      "featured": true,
+      "image": "too-049.svg"
+    },
+    {
+      "id": "too-050",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "مساقي دواجن أوتوماتيكية (Poultry Drinkers)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "أدوات سقاية أوتوماتيكية شائعة الاستخدام في عنابر الدواجن.",
+      "usage": "لتوفير مياه شرب نظيفة ومستمرة لقطعان الدواجن.",
+      "featured": false,
+      "image": "too-050.svg"
+    },
+    {
+      "id": "too-051",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "مكشاف بيض (Egg Candler)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "جهاز إضاءة لفحص صلاحية وتخصيب بيض التفريخ.",
+      "usage": "لفحص بيض التفريخ أثناء عملية الحضانة.",
+      "featured": false,
+      "image": "too-051.svg"
+    },
+    {
+      "id": "too-052",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "حاضنة كتاكيت صغيرة (Chick Brooder)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "وحدة تدفئة صغيرة لرعاية الكتاكيت حديثة الفقس.",
+      "usage": "لتوفير بيئة دافئة مناسبة للكتاكيت في الأيام الأولى.",
+      "featured": false,
+      "image": "too-052.svg"
+    },
+    {
+      "id": "too-053",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "مساقي علف دواجن (Poultry Feeders)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "أوعية تغذية أوتوماتيكية أو نصف أوتوماتيكية لعنابر الدواجن.",
+      "usage": "لتوفير العلف بشكل منتظم لقطعان الدواجن.",
+      "featured": false,
+      "image": "too-053.svg"
+    },
+    {
+      "id": "too-054",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "أقفاص نقل دواجن (Poultry Crates)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "أقفاص بلاستيكية مخصصة لنقل الدواجن الحية.",
+      "usage": "لنقل الدواجن بأمان بين المزرعة والأسواق أو العيادات.",
+      "featured": false,
+      "image": "too-054.svg"
+    },
+    {
+      "id": "too-055",
+      "category": "tools",
+      "subcategory": "مستلزمات دواجن",
+      "name": "جهاز تفقيس بيض صغير (Egg Incubator)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "دواجن"
+      ],
+      "description": "حاضنة بيض صغيرة الحجم للاستخدام في المزارع الصغيرة والمتوسطة.",
+      "usage": "لتفقيس بيض الدواجن في بيئة محكومة الحرارة والرطوبة.",
+      "featured": false,
+      "image": "too-055.svg"
+    },
+    {
+      "id": "too-056",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "آلة حلب بسيطة (Milking Machine)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "معدات حلب أساسية تُستخدم في المزارع الصغيرة والمتوسطة.",
+      "usage": "لحلب الأبقار أو الأغنام أو الماعز بكفاءة أكبر من الحلب اليدوي.",
+      "featured": false,
+      "image": "too-056.svg"
+    },
+    {
+      "id": "too-057",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "غاطس حلمات للأبقار (Teat Dip Cup)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار"
+      ],
+      "description": "كوب غمس الحلمات يُستخدم بعد الحلب للحفاظ على صحة الضرع.",
+      "usage": "للعناية بصحة الضرع والوقاية من التهابات الحلمات بعد الحلب.",
+      "featured": false,
+      "image": "too-057.svg"
+    },
+    {
+      "id": "too-058",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "مقص جز الصوف (Sheep Shears)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أغنام"
+      ],
+      "description": "مقص متخصص لجز صوف الأغنام.",
+      "usage": "لجز صوف الأغنام في مواسم الجز.",
+      "featured": false,
+      "image": "too-058.svg"
+    },
+    {
+      "id": "too-059",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "حزام قياس وزن الماشية (Weight Band)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام",
+        "ماعز"
+      ],
+      "description": "شريط قياس تقديري لوزن الماشية بالاعتماد على محيط الصدر.",
+      "usage": "لتقدير وزن الماشية بشكل سريع في المزرعة.",
+      "featured": false,
+      "image": "too-059.svg"
+    },
+    {
+      "id": "too-060",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "مغناطيس الكرش (Rumen Magnet)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار"
+      ],
+      "description": "أداة تُعطى فمويًا للأبقار لالتقاط الأجسام المعدنية داخل الكرش.",
+      "usage": "للوقاية من مرض الجسم الغريب الناتج عن ابتلاع المعادن.",
+      "featured": false,
+      "image": "too-060.svg"
+    },
+    {
+      "id": "too-061",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "زجاجة رضاعة عجول (Calf Feeding Bottle)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار"
+      ],
+      "description": "زجاجة رضاعة مع حلمة مخصصة لتغذية العجول الصغيرة.",
+      "usage": "لتغذية العجول حديثة الولادة باللبن الصناعي أو الطبيعي.",
+      "featured": false,
+      "image": "too-061.svg"
+    },
+    {
+      "id": "too-062",
+      "category": "tools",
+      "subcategory": "مستلزمات أبقار وأغنام وماعز",
+      "name": "أنبوب فمي للمغص (Stomach Tube)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "أبقار",
+        "أغنام"
+      ],
+      "description": "أنبوب مرن يُستخدم لإدخال السوائل أو الأدوية مباشرة إلى المعدة.",
+      "usage": "يُستخدم بيطريًا في حالات الانتفاخ أو لإعطاء سوائل ضرورية.",
+      "featured": false,
+      "image": "too-062.svg"
+    },
+    {
+      "id": "too-063",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "طقم عناية بالخيول (Grooming Kit)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "مجموعة أدوات أساسية للعناية اليومية بالخيول.",
+      "usage": "للعناية اليومية بنظافة وفراء الخيول.",
+      "featured": false,
+      "image": "too-063.svg"
+    },
+    {
+      "id": "too-064",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "مقص تشذيب حوافر الخيول (Hoof Nippers)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "أداة متخصصة للعناية بحوافر الخيول.",
+      "usage": "لتشذيب والعناية بحوافر الخيول بشكل دوري.",
+      "featured": false,
+      "image": "too-064.svg"
+    },
+    {
+      "id": "too-065",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "غطاء جسم للخيول (Horse Blanket)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "غطاء جسم يُستخدم لحماية الخيول من البرد أو الحشرات.",
+      "usage": "لحماية الخيل من الظروف الجوية القاسية.",
+      "featured": false,
+      "image": "too-065.svg"
+    },
+    {
+      "id": "too-066",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "مقود ولجام أساسي للخيول (Bridle)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "عدة قيادة أساسية للخيول تُستخدم في التدريب والركوب.",
+      "usage": "للتحكم بالخيل أثناء الركوب أو التدريب.",
+      "featured": false,
+      "image": "too-066.svg"
+    },
+    {
+      "id": "too-067",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "منقاش حوافر (Hoof Pick)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "أداة صغيرة لتنظيف باطن حافر الخيل من الحصى والأوساخ.",
+      "usage": "لتنظيف حوافر الخيول قبل وبعد الركوب.",
+      "featured": false,
+      "image": "too-067.svg"
+    },
+    {
+      "id": "too-068",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "قناع حماية من الذباب (Fly Mask)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "قناع شبكي يحمي عيني ووجه الخيل من الحشرات.",
+      "usage": "لحماية الخيل من الذباب والحشرات المزعجة.",
+      "featured": false,
+      "image": "too-068.svg"
+    },
+    {
+      "id": "too-069",
+      "category": "tools",
+      "subcategory": "مستلزمات خيول",
+      "name": "لفافات حماية أرجل الخيول (Leg Wraps)",
+      "company": "غير متوفر حاليًا",
+      "animal": [
+        "خيول"
+      ],
+      "description": "لفافات حماية توضع حول أرجل الخيل أثناء التمرين أو النقل.",
+      "usage": "لحماية أرجل الخيل من الإصابات أثناء التدريب أو النقل.",
+      "featured": false,
+      "image": "too-069.svg"
+    }
+  ]
+}

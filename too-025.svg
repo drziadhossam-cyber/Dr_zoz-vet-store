@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="صورة توضيحية: شريط لاصق طبي (Elastoplast)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E4F0EE"/>
+      <stop offset="100%" stop-color="#D3E6E2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="none" stroke="#0E5C53" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" transform="translate(80,55) scale(2.15)">
+    <path d="M25 75V35a6 6 0 0 1 12 0v10M37 45V20a6 6 0 0 1 12 0v25M49 45V22a6 6 0 0 1 12 0v23M61 45V30a6 6 0 0 1 12 0v20c0 14-9 25-23 25H35c-8 0-14-5-14-13v-7"/>
+  </g>
+  <text x="200" y="255" text-anchor="middle" font-family="Tajawal, Arial, sans-serif" font-size="12" fill="#6B7570">صورة توضيحية — لا تمثل عبوة حقيقية</text>
+  <text x="200" y="280" text-anchor="middle" font-family="Tajawal, Arial, sans-serif" font-size="17" font-weight="700" fill="#0A423B"><tspan x="200" y="290">شريط لاصق طبي</tspan><tspan x="200" y="310">(Elastoplast)</tspan></text>
+</svg>
