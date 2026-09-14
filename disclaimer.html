@@ -15,7 +15,344 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
+/* ==========================================================================
+   Dr_Zoz Vet Store — Stylesheet
+   تصميم عربي RTL، طبي/بيطري، Responsive بالكامل
+   ========================================================================== */
+
+:root{
+  --color-primary:#0E5C53;
+  --color-primary-dark:#0A423B;
+  --color-primary-light:#E4F0EE;
+  --color-accent:#D98E2B;
+  --color-accent-dark:#B5721A;
+  --color-ink:#1B2420;
+  --color-bg:#F6F7F3;
+  --color-surface:#FFFFFF;
+  --color-border:#E1E4DD;
+  --color-success:#3E8E5A;
+  --color-danger:#C1553B;
+  --color-muted:#6B7570;
+
+  --font-head:'El Messiri', 'Tajawal', sans-serif;
+  --font-body:'Tajawal', sans-serif;
+
+  --radius-s:8px;
+  --radius-m:14px;
+  --radius-l:22px;
+  --shadow-card:0 2px 14px rgba(14,92,83,0.08);
+  --shadow-pop:0 10px 30px rgba(14,92,83,0.18);
+  --container:1180px;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  background:var(--color-bg);
+  color:var(--color-ink);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:var(--font-head);
+  margin:0 0 .5em;
+  line-height:1.3;
+  color:var(--color-primary-dark);
+}
+h1{font-size:clamp(1.9rem,3.2vw,2.7rem);}
+h2{font-size:clamp(1.5rem,2.4vw,2rem);}
+h3{font-size:1.15rem;}
+p{margin:0 0 1em;color:var(--color-ink);}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+ul{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+input,select{font-family:inherit;}
+
+:focus-visible{outline:3px solid var(--color-accent);outline-offset:2px;}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 20px;}
+.section{padding:56px 0;}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap;}
+.section-head p{margin:6px 0 0;color:var(--color-muted);}
+.bg-alt{background:var(--color-surface);}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;border-radius:999px;border:2px solid transparent;
+  font-weight:700;font-size:.96rem;transition:transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn:active{transform:scale(.97);}
+.btn-primary{background:var(--color-primary);color:#fff;}
+.btn-primary:hover{background:var(--color-primary-dark);}
+.btn-accent{background:var(--color-accent);color:#241705;}
+.btn-accent:hover{background:var(--color-accent-dark);color:#fff;}
+.btn-outline{background:transparent;border-color:var(--color-primary);color:var(--color-primary);}
+.btn-outline:hover{background:var(--color-primary);color:#fff;}
+.btn-ghost{background:var(--color-primary-light);color:var(--color-primary-dark);}
+.btn-block{width:100%;}
+.btn-sm{padding:8px 16px;font-size:.85rem;}
+.btn[disabled]{opacity:.5;cursor:not-allowed;}
+
+/* ==== Header ==== */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,247,243,0.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--color-border);
+}
+.header-inner{display:flex;align-items:center;gap:18px;padding:14px 20px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-size:1.35rem;color:var(--color-primary-dark);font-weight:700;}
+.logo .mark{
+  width:38px;height:38px;border-radius:11px;background:var(--color-primary);
+  display:flex;align-items:center;justify-content:center;color:#fff;flex:none;
+}
+.logo .mark svg{width:22px;height:22px;}
+.main-nav{display:flex;gap:6px;margin-inline-start:12px;flex:1;}
+.main-nav a{
+  padding:10px 14px;border-radius:999px;font-weight:600;color:var(--color-ink);font-size:.95rem;
+  transition:background .2s ease,color .2s ease;
+}
+.main-nav a:hover,.main-nav a.active{background:var(--color-primary-light);color:var(--color-primary-dark);}
+.header-actions{display:flex;align-items:center;gap:8px;}
+.icon-btn{
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--color-border);background:var(--color-surface);
+  display:flex;align-items:center;justify-content:center;position:relative;color:var(--color-primary-dark);
+  transition:border-color .2s ease, background .2s ease;
+}
+.icon-btn:hover{border-color:var(--color-primary);background:var(--color-primary-light);}
+.icon-btn svg{width:20px;height:20px;}
+.cart-count{
+  position:absolute;top:-4px;insert-inline-start:-4px;left:-4px;
+  background:var(--color-accent);color:#241705;font-size:.68rem;font-weight:800;
+  min-width:19px;height:19px;border-radius:999px;display:flex;align-items:center;justify-content:center;
+  padding:0 4px;
+}
+.nav-toggle{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--color-border);background:var(--color-surface);align-items:center;justify-content:center;}
+.nav-toggle svg{width:22px;height:22px;}
+
+.search-bar{
+  display:flex;align-items:center;gap:8px;background:var(--color-surface);
+  border:1px solid var(--color-border);border-radius:999px;padding:6px 6px 6px 14px;
+  max-width:320px;width:100%;margin-inline-start:6px;
+}
+.search-bar input{border:none;background:transparent;flex:1;font-size:.92rem;outline:none;color:var(--color-ink);}
+.search-bar button{background:var(--color-primary);color:#fff;border:none;border-radius:999px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;}
+.search-bar svg{width:17px;height:17px;}
+
+/* ==== Hero ==== */
+.hero{position:relative;overflow:hidden;padding:64px 0 40px;}
+.hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;}
+.hero-eyebrow{color:var(--color-primary);font-weight:700;margin-bottom:10px;display:block;}
+.hero h1{max-width:15ch;}
+.hero .lead{font-size:1.1rem;color:var(--color-muted);max-width:46ch;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;}
+.hero-stats{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;}
+.hero-stats div strong{display:block;font-family:var(--font-head);font-size:1.5rem;color:var(--color-primary-dark);}
+.hero-stats div span{color:var(--color-muted);font-size:.88rem;}
+.hero-art{position:relative;}
+.hero-art svg{width:100%;height:auto;}
+
+/* ==== Category grid ==== */
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.category-card{
+  background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-l);
+  padding:24px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s ease, box-shadow .2s ease;
+}
+.category-card:hover{border-color:var(--color-primary);box-shadow:var(--shadow-card);}
+.category-card .ic{width:52px;height:52px;border-radius:14px;background:var(--color-primary-light);display:flex;align-items:center;justify-content:center;color:var(--color-primary);}
+.category-card .ic svg{width:26px;height:26px;}
+.category-card h3{margin:0;}
+.category-card p{color:var(--color-muted);font-size:.92rem;margin:0;}
+
+/* ==== Animal chips ==== */
+.animal-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+.animal-chip{
+  background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-m);
+  padding:18px 10px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;
+  font-weight:700;color:var(--color-primary-dark);transition:background .2s ease,border-color .2s ease;
+}
+.animal-chip:hover{background:var(--color-primary-light);border-color:var(--color-primary);}
+.animal-chip svg{width:28px;height:28px;color:var(--color-primary);}
+
+/* ==== Product grid & cards ==== */
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.product-card{
+  background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-m);
+  overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s ease, transform .2s ease;
+}
+.product-card:hover{box-shadow:var(--shadow-card);transform:translateY(-2px);}
+.product-card .thumb{aspect-ratio:1/1;background:var(--color-primary-light);position:relative;overflow:hidden;}
+.product-card .thumb img{width:100%;height:100%;object-fit:cover;}
+.badge{
+  position:absolute;top:10px;insert-inline-start:10px;right:10px;background:var(--color-accent);color:#241705;
+  font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:999px;
+}
+.badge-outline{background:#fff;color:var(--color-primary-dark);border:1px solid var(--color-border);}
+.product-card .body{padding:16px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.product-card .cat{font-size:.75rem;color:var(--color-muted);font-weight:700;}
+.product-card h3{font-size:1rem;margin:0;}
+.product-card .company{color:var(--color-muted);font-size:.82rem;}
+.stock-tag{font-size:.8rem;font-weight:700;}
+.stock-tag.in{color:var(--color-success);}
+.stock-tag.out{color:var(--color-danger);}
+.product-card .actions{display:flex;gap:8px;margin-top:auto;padding-top:6px;}
+.product-card .actions .btn{flex:1;padding:9px 10px;font-size:.82rem;}
+
+.search-bar{position:relative;}
+.search-results{
+  position:absolute;top:calc(100% + 8px);inset-inline:0;background:var(--color-surface);
+  border:1px solid var(--color-border);border-radius:var(--radius-m);box-shadow:var(--shadow-pop);
+  max-height:340px;overflow-y:auto;z-index:70;
+}
+.search-result-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--color-border);}
+.search-result-item:hover{background:var(--color-primary-light);}
+.search-result-item img{width:38px;height:38px;border-radius:8px;object-fit:cover;background:var(--color-primary-light);flex:none;}
+.search-result-item strong{display:block;font-size:.88rem;}
+.search-result-item span{display:block;font-size:.76rem;color:var(--color-muted);}
+.search-empty{padding:14px;text-align:center;color:var(--color-muted);font-size:.86rem;}
+
+/* ==== Filters / toolbar ==== */
+.toolbar{
+  display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:var(--color-surface);
+  border:1px solid var(--color-border);border-radius:var(--radius-m);padding:16px;margin-bottom:24px;
+}
+.filter-group{display:flex;flex-direction:column;gap:4px;min-width:150px;}
+.filter-group label{font-size:.78rem;font-weight:700;color:var(--color-muted);}
+.filter-group select,.filter-group input{
+  padding:9px 12px;border-radius:var(--radius-s);border:1px solid var(--color-border);background:#fff;font-size:.9rem;
+}
+.filters-layout{display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:start;}
+.filters-panel{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-m);padding:18px;position:sticky;top:90px;}
+.filters-panel h3{font-size:1rem;}
+.filters-panel .filter-group{width:100%;margin-bottom:14px;}
+.results-empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--color-muted);}
+
+/* ==== Product detail ==== */
+.product-detail{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start;}
+.product-detail .thumb-lg{border-radius:var(--radius-l);overflow:hidden;background:var(--color-primary-light);border:1px solid var(--color-border);}
+.spec-table{width:100%;border-collapse:collapse;margin:18px 0;}
+.spec-table tr{border-bottom:1px solid var(--color-border);}
+.spec-table td{padding:10px 4px;font-size:.92rem;}
+.spec-table td:first-child{color:var(--color-muted);font-weight:700;width:42%;}
+.qty-selector{display:flex;align-items:center;gap:0;border:1px solid var(--color-border);border-radius:999px;width:fit-content;}
+.qty-selector button{width:38px;height:38px;background:transparent;border:none;font-size:1.1rem;color:var(--color-primary-dark);}
+.qty-selector input{width:44px;text-align:center;border:none;background:transparent;font-weight:700;}
+.detail-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;}
+.disclaimer-box{
+  background:#FBF3E7;border:1px solid #EFD9AE;border-radius:var(--radius-m);padding:14px 16px;font-size:.86rem;color:#6B4E15;margin-top:18px;
+}
+
+/* ==== Cart page ==== */
+.cart-table{width:100%;border-collapse:collapse;background:var(--color-surface);border-radius:var(--radius-m);overflow:hidden;border:1px solid var(--color-border);}
+.cart-table th,.cart-table td{padding:14px;text-align:start;border-bottom:1px solid var(--color-border);font-size:.92rem;}
+.cart-table th{background:var(--color-primary-light);color:var(--color-primary-dark);}
+.cart-row-thumb{display:flex;align-items:center;gap:10px;}
+.cart-row-thumb img{width:52px;height:52px;border-radius:8px;object-fit:cover;background:var(--color-primary-light);}
+.cart-remove{color:var(--color-danger);font-weight:700;background:none;border:none;font-size:.85rem;}
+.cart-summary{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-m);padding:20px;position:sticky;top:90px;}
+.cart-summary .row{display:flex;justify-content:space-between;padding:8px 0;font-size:.94rem;}
+.cart-summary .total{font-weight:800;font-size:1.15rem;color:var(--color-primary-dark);border-top:1px dashed var(--color-border);margin-top:10px;padding-top:14px;}
+.cart-layout{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:start;}
+.empty-cart{text-align:center;padding:60px 20px;color:var(--color-muted);}
+.empty-cart svg{width:70px;height:70px;color:var(--color-border);margin:0 auto 16px;}
+
+/* ==== Forms (contact) ==== */
+.form-grid{display:grid;gap:14px;max-width:640px;}
+.form-grid label{font-weight:700;font-size:.9rem;display:block;margin-bottom:6px;}
+.form-grid input,.form-grid textarea,.form-grid select{
+  width:100%;padding:11px 14px;border-radius:var(--radius-s);border:1px solid var(--color-border);background:#fff;font-size:.94rem;
+}
+.form-grid textarea{min-height:120px;resize:vertical;}
+
+/* ==== Legal pages ==== */
+.legal-content h2{margin-top:1.6em;}
+.legal-content ul{list-style:disc;padding-inline-start:1.4em;margin-bottom:1em;}
+.legal-content li{margin-bottom:.4em;}
+.notice-box{background:var(--color-primary-light);border-radius:var(--radius-m);padding:16px 20px;margin:20px 0;font-size:.92rem;color:var(--color-primary-dark);}
+
+/* ==== Footer ==== */
+.site-footer{background:var(--color-primary-dark);color:#DDEAE7;margin-top:60px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px;padding:50px 0 30px;}
+.footer-grid h4{color:#fff;font-size:1rem;margin-bottom:14px;}
+.footer-grid a{color:#BFD6D1;display:block;padding:4px 0;font-size:.9rem;}
+.footer-grid a:hover{color:#fff;}
+.footer-brand p{color:#BFD6D1;font-size:.9rem;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding:18px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:.82rem;color:#9FBEB8;}
+.dev-credit{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.dev-fb-link{
+  display:inline-flex;align-items:center;gap:6px;color:#DDEAE7;font-weight:700;
+  background:rgba(255,255,255,0.08);padding:5px 12px;border-radius:999px;transition:background .2s ease,color .2s ease;
+}
+.dev-fb-link:hover{background:#1877F2;color:#fff;}
+.dev-fb-link svg{width:15px;height:15px;flex:none;}
+
+/* ==== WhatsApp floating button ==== */
+.wa-float{
+  position:fixed;bottom:22px;left:22px;z-index:60;
+  width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-pop);
+}
+.wa-float svg{width:28px;height:28px;}
+
+/* ==== Mobile nav drawer ==== */
+.mobile-drawer{
+  position:fixed;inset:0;background:rgba(15,25,22,.5);z-index:80;display:none;
+}
+.mobile-drawer.open{display:block;}
+.mobile-drawer .panel{
+  position:absolute;top:0;right:0;height:100%;width:82%;max-width:320px;background:var(--color-surface);
+  padding:20px;display:flex;flex-direction:column;gap:6px;overflow-y:auto;
+}
+.mobile-drawer a{padding:12px 10px;border-radius:10px;font-weight:700;color:var(--color-ink);}
+.mobile-drawer a:hover{background:var(--color-primary-light);}
+.drawer-close{align-self:flex-end;width:36px;height:36px;border:none;background:var(--color-primary-light);border-radius:50%;}
+
+/* ==== Utility ==== */
+.text-muted{color:var(--color-muted);}
+.mt-0{margin-top:0;}
+.badges-row{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0;}
+.skip-link{position:absolute;top:-50px;right:10px;background:var(--color-primary);color:#fff;padding:10px 16px;border-radius:8px;z-index:200;transition:top .2s;}
+.skip-link:focus{top:10px;}
+
+/* ==== Responsive ==== */
+@media (max-width:1080px){
+  .product-grid{grid-template-columns:repeat(3,1fr);}
+  .category-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .hero-art{order:-1;max-width:280px;margin:0 auto;}
+  .filters-layout{grid-template-columns:1fr;}
+  .filters-panel{position:static;}
+  .cart-layout{grid-template-columns:1fr;}
+  .product-detail{grid-template-columns:1fr;}
+  .main-nav{display:none;}
+  .nav-toggle{display:flex;}
+  .search-bar{display:none;}
+}
+@media (max-width:640px){
+  .product-grid{grid-template-columns:repeat(2,1fr);}
+  .category-grid{grid-template-columns:1fr;}
+  .animal-grid{grid-template-columns:repeat(3,1fr);}
+  .footer-grid{grid-template-columns:1fr;padding:36px 0 20px;}
+  .hero{padding:40px 0 24px;}
+}
+@media (max-width:420px){
+  .product-grid{grid-template-columns:1fr 1fr;gap:12px;}
+  .header-inner{padding:12px 14px;}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important;}
+}
+
+</style>
 </head>
 <body data-page="disclaimer">
 <a href="#main" class="skip-link">تخطَّ إلى المحتوى</a>
@@ -121,11 +458,506 @@
   </div>
 </footer>
 <a class="wa-float" data-wa-general href="#" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.4.7 4.66 1.9 6.56L4 29l7.6-1.86a12 12 0 0 0 4.42.85h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.36-.22-4.5 1.1 1.2-4.38-.24-.45a9.9 9.9 0 0 1-1.53-5.53c0-5.47 4.45-9.92 9.94-9.92 2.66 0 5.15 1.04 7.03 2.92a9.85 9.85 0 0 1 2.9 7.02c0 5.47-4.45 9.86-9.33 9.86zm5.44-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg></a>
-<script src="whatsapp.js"></script>
-<script src="cart.js"></script>
-<script src="products.js"></script>
-<script src="search.js"></script>
-<script src="app.js"></script>
+<script>
+/* ---- whatsapp.js ---- */
+/* ==========================================================================
+   whatsapp.js — بناء روابط WhatsApp Click-to-Chat (بدون أي API مدفوع)
+   ملاحظة: لا تحتوي أي رسالة واتساب على أي سعر إطلاقًا.
+   ========================================================================== */
+
+function vmeWaNumber() {
+  return (window.VME.settings && window.VME.settings.whatsappNumber) || '';
+}
+
+/** رابط استفسار/طلب عن منتج واحد من صفحة المنتج أو بطاقة المنتج */
+function vmeBuildProductWaLink(product) {
+  const text = encodeURIComponent(`مرحبًا، أريد الاستفسار عن توفر منتج: ${product.name}`);
+  return `https://wa.me/${vmeWaNumber()}?text=${text}`;
+}
+
+/** رابط إرسال قائمة استفسار تضم عدة منتجات من صفحة السلة/قائمة الاستفسار */
+function vmeBuildCartWaLink(items) {
+  const lines = ['مرحبًا، أريد الاستفسار عن توفر المنتجات التالية:', ''];
+  items.forEach((item, idx) => {
+    lines.push(`${idx + 1}- ${item.product.name}${item.qty > 1 ? ' (الكمية المطلوب الاستفسار عنها: ' + item.qty + ')' : ''}`);
+  });
+  const text = encodeURIComponent(lines.join('\n'));
+  return `https://wa.me/${vmeWaNumber()}?text=${text}`;
+}
+
+
+/* ---- cart.js ---- */
+/* ==========================================================================
+   cart.js — قائمة استفسار المنتجات باستخدام LocalStorage (بدون Backend، بدون أسعار)
+   ========================================================================== */
+
+const VME_CART_KEY = 'vme_cart_v1';
+
+function vmeGetCartRaw() {
+  try {
+    return JSON.parse(localStorage.getItem(VME_CART_KEY)) || [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function vmeSaveCartRaw(cart) {
+  localStorage.setItem(VME_CART_KEY, JSON.stringify(cart));
+  vmeUpdateCartCount();
+}
+
+function vmeCartCount() {
+  return vmeGetCartRaw().reduce((sum, item) => sum + item.qty, 0);
+}
+
+function vmeAddToCart(productId, qty) {
+  qty = Math.max(1, parseInt(qty, 10) || 1);
+  const cart = vmeGetCartRaw();
+  const existing = cart.find(i => i.id === productId);
+  if (existing) existing.qty += qty;
+  else cart.push({ id: productId, qty });
+  vmeSaveCartRaw(cart);
+}
+
+function vmeSetQty(productId, qty) {
+  qty = Math.max(1, parseInt(qty, 10) || 1);
+  const cart = vmeGetCartRaw();
+  const existing = cart.find(i => i.id === productId);
+  if (existing) { existing.qty = qty; vmeSaveCartRaw(cart); }
+}
+
+function vmeRemoveFromCart(productId) {
+  const cart = vmeGetCartRaw().filter(i => i.id !== productId);
+  vmeSaveCartRaw(cart);
+}
+
+/* ---------- عرض صفحة قائمة الاستفسار (cart.html) ---------- */
+
+function vmeRenderCartPage() {
+  const cartRaw = vmeGetCartRaw();
+  const items = cartRaw
+    .map(i => ({ qty: i.qty, product: vmeFindProduct(i.id) }))
+    .filter(i => i.product);
+
+  const wrap = document.getElementById('cart-content');
+  if (!wrap) return;
+
+  if (items.length === 0) {
+    wrap.innerHTML = `
+      <div class="empty-cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <h3>لا توجد منتجات في قائمة الاستفسار</h3>
+        <p>تصفح الأدوية أو الأدوات وأضف ما تحتاج الاستفسار عن توفره.</p>
+        <a href="veterinary-medicines.html" class="btn btn-primary">تصفح الأدوية البيطرية</a>
+      </div>`;
+    return;
+  }
+
+  const rows = items.map(({ product, qty }) => `
+    <tr>
+      <td>
+        <div class="cart-row-thumb">
+          <img src="${product.image}" alt="${product.name}">
+          <div>
+            <strong>${product.name}</strong><br>
+            <span class="text-muted" style="font-size:.8rem">${product.subcategory || ''}</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="qty-selector">
+          <button type="button" data-qty-btn="-" data-id="${product.id}">−</button>
+          <input type="text" value="${qty}" data-qty-input data-id="${product.id}" inputmode="numeric">
+          <button type="button" data-qty-btn="+" data-id="${product.id}">+</button>
+        </div>
+      </td>
+      <td><button class="cart-remove" data-remove="${product.id}">حذف</button></td>
+    </tr>`).join('');
+
+  wrap.innerHTML = `
+    <div class="cart-layout">
+      <div style="overflow-x:auto">
+        <table class="cart-table">
+          <thead><tr><th>المنتج</th><th>الكمية</th><th></th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <aside class="cart-summary">
+        <h3>ملخص قائمة الاستفسار</h3>
+        <div class="row"><span>عدد المنتجات</span><span>${items.reduce((s, i) => s + i.qty, 0)}</span></div>
+        <p class="text-muted" style="font-size:.82rem">لا يعرض الموقع أي أسعار. التوفر النهائي يتم تأكيده عبر واتساب.</p>
+        <a href="#" id="cart-wa-btn" class="btn btn-accent btn-block">إرسال الاستفسار عبر WhatsApp</a>
+      </aside>
+    </div>`;
+
+  wrap.querySelectorAll('[data-qty-btn]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const input = wrap.querySelector(`[data-qty-input][data-id="${id}"]`);
+      let val = parseInt(input.value, 10) || 1;
+      val = btn.dataset.qtyBtn === '+' ? val + 1 : Math.max(1, val - 1);
+      vmeSetQty(id, val);
+      vmeRenderCartPage();
+    });
+  });
+  wrap.querySelectorAll('[data-qty-input]').forEach(input => {
+    input.addEventListener('change', () => { vmeSetQty(input.dataset.id, input.value); vmeRenderCartPage(); });
+  });
+  wrap.querySelectorAll('[data-remove]').forEach(btn => {
+    btn.addEventListener('click', () => { vmeRemoveFromCart(btn.dataset.remove); vmeRenderCartPage(); });
+  });
+
+  const waBtn = document.getElementById('cart-wa-btn');
+  if (waBtn) waBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(vmeBuildCartWaLink(items), '_blank');
+  });
+}
+
+function vmeInitPage_cart() {
+  vmeRenderCartPage();
+}
+
+
+/* ---- products.js ---- */
+/* ==========================================================================
+   products.js — عرض المنتجات: الشبكة، صفحة الفئة مع الفلاتر، صفحة التفاصيل
+   ملاحظة: لا يعرض الموقع أي أسعار في أي مكان.
+   ========================================================================== */
+
+function vmeProductCardHtml(product) {
+  return `
+  <div class="product-card" data-id="${product.id}">
+    <a href="product.html?id=${product.id}" class="thumb">
+      ${product.featured ? '<span class="badge">منتج مميز</span>' : ''}
+      <img src="${product.image}" alt="${product.name}" loading="lazy">
+    </a>
+    <div class="body">
+      <span class="cat">${product.subcategory || ''}</span>
+      <h3><a href="product.html?id=${product.id}">${product.name}</a></h3>
+      <span class="text-muted" style="font-size:.82rem">${product.company ? 'الشركة: ' + product.company : 'الشركة المصنعة: غير متوفر حاليًا'}</span>
+      <div class="actions">
+        <a href="product.html?id=${product.id}" class="btn btn-outline">التفاصيل</a>
+        <button class="btn btn-primary" data-quick-wa="${product.id}">اطلب عبر WhatsApp</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function vmeRenderGrid(container, products) {
+  if (!container) return;
+  if (!products.length) {
+    container.innerHTML = `<div class="results-empty"><h3>لا توجد نتائج مطابقة</h3><p>جرّب تعديل الفلاتر أو كلمة البحث.</p></div>`;
+    return;
+  }
+  container.innerHTML = products.map(vmeProductCardHtml).join('');
+  container.querySelectorAll('[data-quick-wa]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const product = vmeFindProduct(btn.dataset.quickWa);
+      if (product) window.open(vmeBuildProductWaLink(product), '_blank');
+    });
+  });
+}
+
+/* ---------- الصفحة الرئيسية ---------- */
+function vmeInitPage_home() {
+  const featured = window.VME.products.filter(p => p.featured);
+  vmeRenderGrid(document.getElementById('featured-grid'), featured.length ? featured.slice(0, 8) : window.VME.products.slice(0, 8));
+  const meds = window.VME.products.filter(p => p.category === 'medicines').slice(0, 8);
+  const tools = window.VME.products.filter(p => p.category === 'tools').slice(0, 8);
+  vmeRenderGrid(document.getElementById('medicines-preview'), meds);
+  vmeRenderGrid(document.getElementById('tools-preview'), tools);
+  const statEl = document.getElementById('stat-products');
+  if (statEl) statEl.textContent = window.VME.products.length + '+';
+}
+
+/* ---------- صفحات الفئات (الأدوية / الأدوات) مع الفلاتر ---------- */
+function vmeUniqueValues(products, field, isArray) {
+  const set = new Set();
+  products.forEach(p => {
+    if (isArray && Array.isArray(p[field])) p[field].forEach(v => set.add(v));
+    else if (p[field]) set.add(p[field]);
+  });
+  return Array.from(set).sort((a, b) => a.localeCompare(b, 'ar'));
+}
+
+function vmeSetupCategoryPage(categoryId) {
+  const all = window.VME.products.filter(p => p.category === categoryId);
+  const grid = document.getElementById('category-grid');
+  const subSelect = document.getElementById('filter-subcategory');
+  const animalSelect = document.getElementById('filter-animal');
+  const companySelect = document.getElementById('filter-company');
+  const sortSelect = document.getElementById('filter-sort');
+  const countLabel = document.getElementById('results-count');
+
+  function fillSelect(select, values, placeholder) {
+    if (!select) return;
+    select.innerHTML = `<option value="">${placeholder}</option>` + values.map(v => `<option value="${v}">${v}</option>`).join('');
+  }
+  fillSelect(subSelect, vmeUniqueValues(all, 'subcategory'), 'كل التصنيفات');
+  fillSelect(animalSelect, vmeUniqueValues(all, 'animal', true), 'كل أنواع الحيوانات');
+  fillSelect(companySelect, vmeUniqueValues(all, 'company').filter(v => v && v !== 'غير متوفر حاليًا'), 'كل الشركات');
+
+  function applyAndRender() {
+    let list = all.slice();
+    const params = new URLSearchParams(window.location.search);
+    const q = (params.get('q') || '').trim().toLowerCase();
+    const animalParam = params.get('animal');
+    const subParam = params.get('sub');
+
+    if (q) {
+      list = list.filter(p => vmeSearchMatch(p, q));
+    }
+    if (subSelect && subSelect.value) list = list.filter(p => p.subcategory === subSelect.value);
+    else if (subParam) list = list.filter(p => p.subcategory === subParam);
+
+    if (animalSelect && animalSelect.value) list = list.filter(p => (p.animal || []).includes(animalSelect.value));
+    else if (animalParam) list = list.filter(p => (p.animal || []).includes(animalParam));
+
+    if (companySelect && companySelect.value) list = list.filter(p => p.company === companySelect.value);
+
+    if (sortSelect && sortSelect.value === 'name') list.sort((a, b) => a.name.localeCompare(b.name, 'ar'));
+    if (sortSelect && sortSelect.value === 'company') list.sort((a, b) => (a.company || '').localeCompare(b.company || '', 'ar'));
+
+    vmeRenderGrid(grid, list);
+    if (countLabel) countLabel.textContent = `${list.length} منتج`;
+  }
+
+  [subSelect, animalSelect, companySelect, sortSelect].forEach(el => {
+    el && el.addEventListener('change', applyAndRender);
+  });
+
+  const searchInInput = document.getElementById('in-page-search');
+  if (searchInInput) {
+    searchInInput.addEventListener('input', () => {
+      const params = new URLSearchParams(window.location.search);
+      if (searchInInput.value) params.set('q', searchInInput.value); else params.delete('q');
+      history.replaceState(null, '', `${location.pathname}?${params.toString()}`);
+      applyAndRender();
+    });
+    const initQ = new URLSearchParams(window.location.search);
+    if (initQ.get('q')) searchInInput.value = initQ.get('q');
+  }
+
+  // دعم فتح الصفحة مباشرة برابط يحدد تصنيفًا أو حيوانًا (من الصفحة الرئيسية)
+  const initParams = new URLSearchParams(window.location.search);
+  if (initParams.get('sub') && subSelect) subSelect.value = initParams.get('sub');
+  if (initParams.get('animal') && animalSelect) animalSelect.value = initParams.get('animal');
+
+  applyAndRender();
+}
+
+function vmeInitPage_medicines() { vmeSetupCategoryPage('medicines'); }
+function vmeInitPage_tools() { vmeSetupCategoryPage('tools'); }
+
+/* ---------- صفحة تفاصيل المنتج ---------- */
+function vmeInitPage_product() {
+  const params = new URLSearchParams(window.location.search);
+  const product = vmeFindProduct(params.get('id'));
+  const wrap = document.getElementById('product-detail-wrap');
+  if (!wrap) return;
+
+  if (!product) {
+    wrap.innerHTML = `<div class="results-empty"><h3>المنتج غير موجود</h3><p>ربما تم حذفه أو تغيير رابطه.</p><a class="btn btn-primary" href="index.html">العودة للرئيسية</a></div>`;
+    return;
+  }
+
+  document.title = `${product.name} | Dr_Zoz Vet Store`;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute('content', `${product.name} - ${product.subcategory || ''} - Dr_Zoz Vet Store`);
+
+  const specRows = [
+    ['الشركة المصنعة', product.company],
+    ['الفئة', product.subcategory],
+    ['الحيوان المستهدف', (product.animal || []).join('، ') || 'غير متوفر حاليًا'],
+    ['الاستخدام العام', product.usage],
+  ];
+
+  wrap.innerHTML = `
+    <div class="product-detail">
+      <div class="thumb-lg"><img src="${product.image}" alt="${product.name}"></div>
+      <div>
+        <span class="cat">${product.subcategory || ''}</span>
+        <h1>${product.name}</h1>
+        <p>${product.description || ''}</p>
+        <table class="spec-table">
+          ${specRows.map(([k, v]) => `<tr><td>${k}</td><td>${v || 'غير متوفر حاليًا'}</td></tr>`).join('')}
+        </table>
+        <div class="detail-actions">
+          <a class="btn btn-accent" id="detail-wa-order" href="#">اطلب عبر WhatsApp</a>
+          <button class="btn btn-outline" id="detail-add-cart">أضف إلى قائمة الاستفسار</button>
+        </div>
+        <div class="disclaimer-box">
+          هذا العرض لأغراض التعريف بالمنتج فقط، ولا يمثل وصفة علاجية أو جرعة دوائية. يُرجى تأكيد التوفر عبر واتساب، والرجوع للطبيب البيطري المختص والجهة المرخصة قبل استخدام أي دواء.
+        </div>
+      </div>
+    </div>`;
+
+  document.getElementById('detail-add-cart').addEventListener('click', (e) => {
+    vmeAddToCart(product.id, 1);
+    e.target.textContent = 'أُضيف ✓';
+    setTimeout(() => { e.target.textContent = 'أضف إلى قائمة الاستفسار'; }, 1400);
+  });
+  document.getElementById('detail-wa-order').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(vmeBuildProductWaLink(product), '_blank');
+  });
+}
+
+
+/* ---- search.js ---- */
+/* ==========================================================================
+   search.js — بحث فوري في الهيدر عبر اسم المنتج / المادة الفعالة / الشركة / الحيوان / التصنيف
+   ========================================================================== */
+
+function vmeSearchMatch(product, q) {
+  const haystack = [product.name, product.company, product.subcategory, product.category, product.description, ...(product.animal||[])]
+    .filter(Boolean).join(' ').toLowerCase();
+  return haystack.includes(q);
+}
+
+function vmeInitSearch() {
+  const input = document.getElementById('header-search-input');
+  const form = document.getElementById('header-search-form');
+  const results = document.getElementById('header-search-results');
+  if (!input || !results) return;
+
+  input.addEventListener('input', () => {
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 2) { results.hidden = true; results.innerHTML = ''; return; }
+    const matches = window.VME.products.filter(p => vmeSearchMatch(p, q)).slice(0, 6);
+    if (!matches.length) {
+      results.innerHTML = `<div class="search-empty">لا توجد نتائج لـ "${input.value}"</div>`;
+    } else {
+      results.innerHTML = matches.map(p => `
+        <a href="product.html?id=${p.id}" class="search-result-item">
+          <img src="${p.image}" alt="">
+          <div>
+            <strong>${p.name}</strong>
+            <span>${p.subcategory || ''}${p.company ? ' • ' + p.company : ''}</span>
+          </div>
+        </a>`).join('');
+    }
+    results.hidden = false;
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!results.contains(e.target) && e.target !== input) results.hidden = true;
+  });
+
+  if (form) form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = encodeURIComponent(input.value.trim());
+    window.location.href = `veterinary-medicines.html?q=${q}`;
+  });
+}
+
+
+/* ---- app.js ---- */
+/* ==========================================================================
+   app.js — التهيئة العامة لكل صفحات الموقع
+   يقوم بتحميل بيانات المنتجات والإعدادات، وتفعيل عناصر الهيدر/الفوتر المشتركة
+   ========================================================================== */
+
+window.VME = window.VME || { settings: null, categories: null, animals: null, products: [] };
+
+/**
+ * تحميل بيانات المنتجات من products.json
+ * ملاحظة: عند فتح الملفات مباشرة (file://) قد يمنع المتصفح طلب fetch،
+ * لذلك يُفضّل تشغيل الموقع عبر سيرفر محلي بسيط أو استضافة فعلية (راجع README.md).
+ */
+function vmeShowDataErrorBanner(reason) {
+  if (document.getElementById('vme-data-error-banner')) return;
+  const banner = document.createElement('div');
+  banner.id = 'vme-data-error-banner';
+  banner.setAttribute('dir', 'rtl');
+  banner.style.cssText = 'position:fixed;top:0;right:0;left:0;z-index:9999;background:#C1553B;color:#fff;padding:12px 16px;font-family:Tajawal,Arial,sans-serif;font-size:14px;text-align:center;';
+  banner.textContent = 'تعذّر تحميل بيانات المنتجات (products.json). تأكد أن هذا الملف مرفوع فعليًا على نفس مجلد الموقع على الاستضافة. تفاصيل: ' + reason;
+  document.body.prepend(banner);
+}
+
+async function vmeLoadData() {
+  if (window.VME.products.length) return window.VME;
+  try {
+    const res = await fetch('products.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    window.VME.settings = json.settings;
+    window.VME.categories = json.categories;
+    window.VME.animals = json.animals;
+    window.VME.products = json.products;
+  } catch (err) {
+    console.error('تعذر تحميل بيانات المنتجات:', err);
+    vmeShowDataErrorBanner(err.message || String(err));
+  }
+  return window.VME;
+}
+
+function vmeFindProduct(id) {
+  return window.VME.products.find(p => p.id === id);
+}
+
+/* ---------- عناصر مشتركة: قائمة الجوال، عداد السلة، زر واتساب ---------- */
+
+function vmeInitMobileNav() {
+  const toggle = document.querySelector('.nav-toggle');
+  const drawer = document.querySelector('.mobile-drawer');
+  const closeBtn = document.querySelector('.drawer-close');
+  if (!toggle || !drawer) return;
+  toggle.addEventListener('click', () => drawer.classList.add('open'));
+  closeBtn && closeBtn.addEventListener('click', () => drawer.classList.remove('open'));
+  drawer.addEventListener('click', (e) => { if (e.target === drawer) drawer.classList.remove('open'); });
+}
+
+function vmeInitSearchToggle() {
+  const icon = document.querySelector('[data-search-toggle]');
+  const bar = document.querySelector('.search-bar');
+  if (!icon || !bar) return;
+  icon.addEventListener('click', () => {
+    bar.classList.toggle('force-show');
+    bar.style.display = bar.classList.contains('force-show') ? 'flex' : '';
+    if (bar.classList.contains('force-show')) bar.querySelector('input').focus();
+  });
+}
+
+function vmeUpdateCartCount() {
+  const badgeEls = document.querySelectorAll('[data-cart-count]');
+  const count = vmeCartCount();
+  badgeEls.forEach(el => { el.textContent = count; el.style.display = count > 0 ? 'flex' : 'none'; });
+}
+
+async function vmeInitCommon() {
+  await vmeLoadData();
+
+  // زر واتساب العائم + زر واتساب في الهيدر
+  const waNumber = (window.VME.settings && window.VME.settings.whatsappNumber) || '';
+  const generalMsg = encodeURIComponent('السلام عليكم، أريد الاستفسار عن منتجات Dr_Zoz Vet Store.');
+  document.querySelectorAll('[data-wa-general]').forEach(el => {
+    el.href = `https://wa.me/${waNumber}?text=${generalMsg}`;
+  });
+
+  document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
+
+  vmeInitMobileNav();
+  vmeInitSearchToggle();
+  vmeUpdateCartCount();
+  if (typeof vmeInitSearch === 'function') vmeInitSearch();
+
+  // تمييز رابط الصفحة الحالية في القائمة
+  const page = document.body.dataset.page;
+  document.querySelectorAll(`.main-nav a[data-page], .mobile-drawer a[data-page]`).forEach(a => {
+    if (a.dataset.page === page) a.classList.add('active');
+  });
+
+  // استدعاء دالة التهيئة الخاصة بالصفحة إن وجدت
+  if (page && typeof window['vmeInitPage_' + page] === 'function') {
+    window['vmeInitPage_' + page]();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', vmeInitCommon);
+
+</script>
 <script>document.getElementById('nav-toggle-btn').addEventListener('click',()=>document.getElementById('mobile-drawer').classList.add('open'));document.getElementById('drawer-close-btn').addEventListener('click',()=>document.getElementById('mobile-drawer').classList.remove('open'));</script>
 </body>
 </html>
